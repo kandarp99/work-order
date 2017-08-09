@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for C:/Users/99/Dropbox/Internet Computing/WorkingDirectory/project/javascripts/offlineapp.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../../../../../../prettify.css">
+    <link rel="stylesheet" href="../../../../../../../../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../../../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header medium">
+    <h1>Code coverage report for <span class="entity">C:/Users/99/Dropbox/Internet Computing/WorkingDirectory/project/javascripts/offlineapp.js</span></h1>
+    <h2>
+        Statements: <span class="metric">69.44% <small>(50 / 72)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">42.86% <small>(6 / 14)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">64.29% <small>(9 / 14)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">71.43% <small>(50 / 70)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../../../../../../index.html">All files</a> &#187; <a href="index.html">C:/Users/99/Dropbox/Internet Computing/WorkingDirectory/project/javascripts/</a> &#187; offlineapp.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var parseForm = function(workorder) {
+	var values = {};
+	var data = $('#' + workorder).serializeArray();
+&nbsp;
+	var mapValues = function(index, field) {
+		values[field.name] = field.value;
+	}
+&nbsp;
+	$(data).each(mapValues);
+	
+	return values;
+}
+&nbsp;
+var saveLocally = function(data) {
+	var workOrderCount = parseInt(localStorage.workOrderCount) + 1 || 1;
+  
+	localStorage['workorder' + workOrderCount] = data;
+	localStorage.workOrderCount = workOrderCount;
+}
+&nbsp;
+var sendLocalStorageToServer = function() {
+	for(key in localStorage) {
+		if(key.indexOf("workorder") &gt; -1) {
+			checkConnected(localStorage.getItem(key));
+			localStorage.removeItem(key);
+			localStorage.workOrderCount--;
+		}
+	}
+}
+&nbsp;
+var checkConnected = <span class="fstat-no" title="function not covered" >function(values, connectedCallback, notConnectedCallback) {</span>
+<span class="cstat-no" title="statement not covered" >	var xhr = new XMLHttpRequest();</span>
+<span class="cstat-no" title="statement not covered" >	var handler = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >		if(xhr.readyState === 4) {</span>
+<span class="cstat-no" title="statement not covered" >			if(xhr.status === 200) {</span>
+<span class="cstat-no" title="statement not covered" >				if(connectedCallback !== undefined)</span>
+<span class="cstat-no" title="statement not covered" >					connectedCallback();</span>
+<span class="cstat-no" title="statement not covered" >				changeNotification('Work Order Successfully Sent to Server', 'rgba(15, 150, 65, 1)');</span>
+<span class="cstat-no" title="statement not covered" >				setTimeout(<span class="fstat-no" title="function not covered" >function() {</span> <span class="cstat-no" title="statement not covered" >changeNotification('&amp;nbsp', 'white') }</span>, 5000);</span>
+			}
+			else {
+<span class="cstat-no" title="statement not covered" >				notConnectedCallback(values);</span>
+<span class="cstat-no" title="statement not covered" >				changeNotification('No Connection -- Work Order Stored Locally', 'rgba(205, 0, 0, 1)');</span>
+<span class="cstat-no" title="statement not covered" >				setTimeout(<span class="fstat-no" title="function not covered" >function() {</span> <span class="cstat-no" title="statement not covered" >changeNotification('&amp;nbsp', 'white') }</span>, 5000);</span>
+			}
+		}
+	}
+	
+<span class="cstat-no" title="statement not covered" >	xhr.onreadystatechange = handler;</span>
+<span class="cstat-no" title="statement not covered" >	xhr.open("POST", "http://localhost:8080", true);</span>
+<span class="cstat-no" title="statement not covered" >	xhr.send(values);</span>
+}
+&nbsp;
+var fillCurrentDate = function(dateField) {
+		var date = new Date();
+		var year = date.getFullYear();
+		var day = date.getDate();
+		var month = date.getMonth() + 1;
+&nbsp;
+		dateField.value = month + '/' + day + '/' + year;
+}
+&nbsp;
+var refreshForm = function(geoLocationFunction, fillDateFunction) {
+	document.getElementById('firstname').value = '';
+	document.getElementById('firstname').focus();
+	document.getElementById('lastname').value = '';
+&nbsp;
+	fillDateFunction(document.getElementById('theDate'));
+	geoLocationFunction(document.getElementById('theLocation'), document.getElementById('locationview'));
+	
+	document.getElementById('theDescription').value = '';
+	document.getElementById('minor').checked = true;
+}
+&nbsp;
+var clearNotification = function(caller) {
+	caller.style.borderColor = 'gray';
+	caller.style.borderWidth = '1px';
+	document.getElementById('notification').innerHTML = '&amp;nbsp';
+}
+&nbsp;
+var changeNotification = function(msg, color) {
+	document.getElementById('notification').style.color = color
+	document.getElementById('notification').innerHTML = msg;
+}
+&nbsp;
+var validate = function() {
+	var isValid = true;
+	var elements = ['firstname', 'lastname', 'theDate', 'theDescription'];
+&nbsp;
+	for(var i = 0; i &lt; elements.length; i++) {
+		if(document.getElementById(elements[i]).value.length &lt; 1) {
+			document.getElementById(elements[i]).style.borderColor = 'rgba(205, 0, 0, 1)';
+			document.getElementById(elements[i]).style.borderWidth = '2px';
+			changeNotification('Please provide values for the highlighted field(s).', 'rgba(205, 0, 0, 1)');
+			isValid = false;
+		}
+	}
+&nbsp;
+	return isValid;
+}
+&nbsp;
+var controller = <span class="fstat-no" title="function not covered" >function(formId, callback) {</span>
+<span class="cstat-no" title="statement not covered" >	if(validate()) {</span>
+<span class="cstat-no" title="statement not covered" >		var formValues = parseForm(formId);</span>
+<span class="cstat-no" title="statement not covered" >		checkConnected(JSON.stringify(formValues), sendLocalStorageToServer, saveLocally);</span>
+<span class="cstat-no" title="statement not covered" >		refreshForm(getGeoLocation, fillCurrentDate);</span>
+<span class="cstat-no" title="statement not covered" >		return true;</span>
+	}
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	return false;</span>
+}
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Aug 08 2015 17:30:26 GMT-0500 (Central Daylight Time)</div>
+</div>
+<script src="../../../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../../../sorter.js"></script>
+</body>
+</html>

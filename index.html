@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en" manifest="mymanifest.appcache">
+<head> 
+	<link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+	<meta name="viewport" content="initial-scale=0.50">
+</head>
+	<body>
+		<p>Create Work Order</p>
+		<form id="workorderform" method="post" onsubmit="return parseForm(this)">
+			<fieldset id="workorder">
+					<section id="name">
+						<label> First Name </label>
+						<input type="text" id="firstname" name="firstname" autofocus required onkeyup="clearNotification(this);"> 
+						<label id="lastnamelabel"> Last Name </label>
+						<input type="text" id="lastname" name="lastname" required onkeyup="clearNotification(this);">
+					</section>
+
+					<section id="date">
+						<label> Date </label>
+						<input type="date" name="date" id="theDate" placeholder="YYYY-MM-DD" onchange="clearNotification(this);">
+					</section>
+
+					<section id="location">
+						<label> Location </label>
+						<label id="locationview">Fetching location, please wait...</label>
+						<input type="hidden" id="theLocation" name="location">
+					</section>
+
+					<section id="description">
+						<label> Description </label>
+						<textarea id="theDescription" name="description" placeholder="Description  (300 character limit)" rows="5" cols="50" maxlength="300" onkeyup="clearNotification(this);"></textarea>
+					</section>
+
+					<section id="priority">
+						<label id="prioritylabel"> Priority </label>
+						<input type="radio" name="prioritylevel" value="Urgent"> Urgent
+						<input type="radio" name="prioritylevel" value="Major"> Major
+						<input type="radio" name="prioritylevel" id="minor" value="Minor" checked="true"> Minor
+					</section>
+
+					<input type="button" value="Submit" onclick="controller('workorderform')">
+					<label id="notification">&nbsp</label>
+			</fieldset>	
+		</form>
+		
+		<p id="pair">&copy; 2015 brandin_desai</p>
+		
+	</body>
+	<script src="./javascripts/offlineapp.js"></script>
+	<script src="./javascripts/geolocation.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
+		document.getElementById('theDate').value = getCurrentDate();
+
+		getGeoLocation(document.getElementById('theLocation'), document.getElementById('locationview'));
+	</script>
+</html>

@@ -1,0 +1,10 @@
+CACHE MANIFEST
+#VERSION 5
+CACHE:
+index.html
+/javascripts/offlineapp.js
+/javascripts/geolocation.js
+/stylesheets/style.css
+
+NETWORK:
+*
